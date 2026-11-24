@@ -11,8 +11,9 @@ ROOT = Path(__file__).resolve().parents[2]
 class MCPClient:
     """Lance le serveur MCP en sous-processus (stdio) et expose list_tools / call_tool."""
 
-    def __init__(self, server_module: str = "src.mcp_environment.server"):
+    def __init__(self, server_module: str = "src.mcp_environment.server", env: dict | None = None):
         self.server_module = server_module
+        self.env = env or {}
         self._stack = AsyncExitStack()
         self.session: ClientSession | None = None
 
@@ -21,6 +22,7 @@ class MCPClient:
             command=sys.executable,
             args=["-m", self.server_module],
             cwd=str(ROOT),
+            env=self.env,
         )
         read, write = await self._stack.enter_async_context(stdio_client(params))
         self.session = await self._stack.enter_async_context(ClientSession(read, write))

@@ -1,0 +1,6 @@
+profile: baseline
+system_prompt: baseline
+scenarios_dir: scenarios
+max_turns: 5
+delay_s: 1
+output: results/baseline_results.json
