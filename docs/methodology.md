@@ -80,6 +80,7 @@ Chaque scénario est comptabilisé dans une seule catégorie (champ `category`).
 - Chaque ligne de log serveur porte `run_id` et `scenario_id`.
 - Les modèles sont probabilistes : les résultats peuvent varier entre exécutions.
   Idéalement, répéter la campagne N fois (ex. N=3) et rapporter la moyenne.
+- temperature=0, seed=42, max_completion_tokens=4000
 
 ## 9. Limites
 15 scénarios, un seul modèle, données synthétiques, un seul tour d'attaque. Les
