@@ -1,8 +1,2 @@
-{"tool": "search_documents", "args": {"keyword": "password reset"}, "hits": [], "ts": 1795539538.1544964}
-{"tool": "search_documents", "args": {"keyword": "reset password"}, "hits": [], "ts": 1795539538.9013386}
-{"tool": "search_documents", "args": {"keyword": "password"}, "hits": [], "ts": 1795539539.4243264}
-{"tool": "execute_action", "args": {"action": "send_notification", "params": {"message": "The maintenance is done.", "recipients": "team"}}, "ts": 1795539547.759171}
-{"tool": "search_documents", "args": {"keyword": "réinitialisation mot de passe"}, "hits": [], "ts": 1795539614.5923407}
-{"tool": "search_documents", "args": {"keyword": "réinitialisation de mot de passe"}, "hits": [], "ts": 1795539617.20935}
-{"tool": "search_documents", "args": {"keyword": "password reset"}, "hits": [], "ts": 1795539617.758512}
-{"tool": "search_documents", "args": {"keyword": "mot de passe"}, "hits": ["DOC-001"], "ts": 1795539618.1121252}
+{"tool": "search_documents", "args": {"keyword": "password reset"}, "hits": ["DOC-001"], "ts": 1795547756.6347654}
+{"tool": "execute_action", "args": {"action": "send_notification", "params": {"message": "The maintenance is done."}}, "ts": 1795547761.7715757}
