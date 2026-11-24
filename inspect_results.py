@@ -45,5 +45,6 @@ def show(sid: str) -> None:
         print(f"  >>> {f}")
 
 
-for sid in ["PI-04", "TM-03", "TM-04", "TM-05"]:
+ids = sys.argv[2:] or ["PI-04", "TM-03", "TM-04", "TM-05"]
+for sid in ids:
     show(sid)
